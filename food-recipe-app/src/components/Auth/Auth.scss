@@ -1,0 +1,53 @@
+// Auth.scss
+
+.auth-container {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+
+  h2 {
+    text-align: center;
+    color: #333; /* Set a specific text color */
+    margin-bottom: 20px; /* Add space below the heading */
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      margin-bottom: 8px;
+      color: #555; /* Set a slightly darker color for labels */
+    }
+
+    input {
+      margin-bottom: 16px;
+      padding: 10px;
+      border: 1px solid #ddd; /* Use a lighter border color */
+      border-radius: 3px;
+      transition: border-color 0.3s ease; /* Add a smooth transition effect for input focus */
+
+      &:focus {
+        border-color: #007bff; /* Change border color on focus */
+      }
+    }
+
+    button {
+      padding: 12px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: background-color 0.3s ease; /* Add a smooth transition effect for button hover */
+
+      &:hover {
+        background-color: #0056b3; /* Darken the background color on hover */
+      }
+    }
+  }
+}
+
